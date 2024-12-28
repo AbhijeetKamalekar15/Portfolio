@@ -61,12 +61,21 @@ document.getElementById('copy-phone-icon').addEventListener('click', function(ev
   copyToClipboard(phone, event);
 });
 
+const checkbox = document.getElementById("check");
+
+const menuLinks = document.querySelectorAll("ul li a");
+
+menuLinks.forEach((link) => {
+    
+    link.addEventListener("click", () => {
+        if(window.innerWidth <= 920){
+        checkbox.checked = false;
+    }
+    });
+});
 
 
 
 
 
 
-
-// Username : "niveditalondhe3@gmail.com",
-// Password : "541E0CE3BF4DEE9D2DD2CBA5170FADA0AA99",
